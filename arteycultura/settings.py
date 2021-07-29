@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whirenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'arteycultura.urls'
@@ -142,5 +143,7 @@ EMAIL_PORT="587"
 EMAIL_HOST_USER="oscarito.resendiz@gmail.com"
 EMAIL_HOST_PASSWORD="zozucozudwcjvvnl"
 EMAIL_USE_TLS=True
+
+STATICFILES_STORAGE = 'whitenoise.storeage.CompressedManifestStaticFilesStoreage'
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
