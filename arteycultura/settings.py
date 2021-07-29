@@ -144,6 +144,4 @@ EMAIL_HOST_USER="oscarito.resendiz@gmail.com"
 EMAIL_HOST_PASSWORD="zozucozudwcjvvnl"
 EMAIL_USE_TLS=True
 
-STATICFILES_STORAGE = 'whitenoise.storeage.CompressedManifestStaticFilesStoreage'
-STATICFILES_ROOT=os.path.join(BASE_DIR,"static")
 
